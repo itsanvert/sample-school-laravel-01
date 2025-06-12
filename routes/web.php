@@ -3,15 +3,14 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ProductController;
 // Home pages
 Route::get('/', function () {
     return view('home', ['name' => 'Vert San']);
 })->name('home');
 
 // ...existing code...
-Route::get('/products', function () {
-    return view('products');
-})->name('products');
+Route::get('/products', [ProductController::class ,'displayProduct'])->name('products');
 
 Route::get('/services', function () {
     return view('services');
