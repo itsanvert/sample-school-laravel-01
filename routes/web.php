@@ -48,3 +48,7 @@ Route::fallback(function () {
 
 Route::get('/student/form', [StudentController::class, 'Form'])->name('form');
 Route::post('/student/submit', [StudentController::class, 'handleForm'])->name('student.handleForm');
+
+
+Route::get('/tmp' , [ProductController::class, 'passingData']);
+

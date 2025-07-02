@@ -19,4 +19,11 @@ class ProductController extends Controller
 
         return view('products', compact('products')); // Pass 'products' instead of 'product'
     }
+
+    public function passingData() {
+        $p_name = "iphone";
+        $p_price = 1000;
+        $p_quantity = 100;
+        return view('tmp', ['p_name' => $p_name, 'p_price' => $p_price, 'p_quantity' => $p_quantity]);
+    }
 }
