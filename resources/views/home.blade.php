@@ -1,3 +1,6 @@
+<div>
+    <!-- He who is contented is rich. - Laozi -->
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
             transform: translateY(-5px);
         }
         .stats-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), 
+            background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)),
                         url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover no-repeat;
         }
     </style>

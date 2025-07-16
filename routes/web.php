@@ -4,6 +4,17 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ProductController;
+
+// Master pages
+Route::get('/master' , function () {
+    return view('layouts.master');
+});
+
+// Master pages
+Route::get('/home-page' , function () {
+    return view('pages.home');
+});
+
 // Home pages
 Route::get('/', function () {
     return view('home', ['name' => 'Vert San']);
@@ -51,4 +62,4 @@ Route::post('/student/submit', [StudentController::class, 'handleForm'])->name('
 
 
 Route::get('/tmp' , [ProductController::class, 'passingData']);
-
+Route::get('/result', [ProductController::class, 'StudenteResult']);
